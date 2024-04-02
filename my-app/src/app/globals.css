@@ -16,14 +16,10 @@
   }
 }
 
-body {
+#login {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url("https://images.hive.blog/p/YpihifdXP4WNbGMdjw7e3DuhJWBvCw4SfuLZsrnJYHEpsqZFkiGGNCPw26VQgK33DZukXwVUP5sKHUYACAzbGSKWc2omqqTcDdozmx7S3K2vrpbnndE54yrnwMj4kKkwRnJeEWBcig9QQLQ3m1y8nzuioWkUHdUr9xszmP165Ud4?format=match&mode=fit");
+  background-size: cover;
 }
 
 @layer utilities {
