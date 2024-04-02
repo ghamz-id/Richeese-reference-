@@ -19,7 +19,7 @@ export default function Login() {
                     <div className="flex flex-col items-center justify-center h-full px-4">
                         <p className="font-bold text-3xl text-white">Hello!</p>
                         <p className="text-white font-light">Terimakasih telah mengunjungi kami</p>
-                        <div className="flex flex-col gap-3 w-80 mt-8">
+                        <form className="flex flex-col gap-3 w-80 mt-8">
                             <label className="input input-bordered flex items-center gap-2 h-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70">
                                     <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
@@ -34,7 +34,7 @@ export default function Login() {
                                 <input type="password" className="grow" placeholder="password" />
                             </label>
                             <button className="btn btn-primary btn-sm font-bold mt-4">Sign In</button>
-                        </div>
+                        </form>
                         <p className="text-white font-light mt-6">Belum memiliki akun ? {" "}
                             <Link href="/register" className="text-blue-600 font-bold hover:text-slate-600">
                                 Register
