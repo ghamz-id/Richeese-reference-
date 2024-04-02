@@ -4,14 +4,15 @@ export default function Login() {
         <div id="login">
             <div className="flex h-screen items-center justify-center mx-24 gap-2">
                 <div className="flex-1 bg-white h-[70%] rounded-xl bg-opacity-75 p-3 border border-l-slate-400">
-                    <div className="flex flex-row h-full">
-                        <div className="flex h-full w-[250%]">
-                            <img src="https://www.richeesefactory.com/media/library/l/13.jpg" className="rounded-lg me-4" />
-                        </div>
-                        <div className="flex flex-col h-full p-3 w-[70%]">
-                            <p><b className="text-4xl">Black Lunch</b>, <i className="text-slate-600 text-sm">Pengenalan Menu Baru Serba Hitam Dari Richeese Factory</i></p>
-                            <img src="Curly-Arrow-PNG.png" alt="arrow" className="bg-cover my-3 px-4" />
-                            <p className="font-light italic text-sm h-full text-end">Login for more</p>
+                    <div className="flex items-center justify-center h-full">
+                        <div>
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRQAQdrkfOw7XMBdfS7CqCN0rSnJ8jGJbI2v9fegTOaZF_edlzyEZLFH8uVJPeVXIt_MW1xA4VTV5UinbYuXVBU833a1zo8BLJOS4mklNr7EKektKtVIXFQ7rAfsxxzXUv6MVknf_M95dm/s1600-rw/richeese+factory.png" alt="..."
+                                className="rounded-box mb-4 h-80"
+                            />
+                            <div className="border-b border-red-500 border-s-8">
+                                <p className="bg-black text-xl text-white py-2 px-5 w-fit rounded-tr-xl">Pastikan !</p>
+                                <p className="bg-red-600 text-white p-1 px-5 ms-10 w-fit rounded-tr-xl mt-1">Anda sudah terdaftar pada aplikasi kami...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,6 +51,6 @@ export default function Login() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
