@@ -1,5 +1,7 @@
 export default function Menus() {
     return (
-        <div>HALAMAN KERANJANG</div>
+        <div className="flex items-center justify-center h-screen">
+            WISHLIST
+        </div>
     )
 }

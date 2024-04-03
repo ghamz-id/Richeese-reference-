@@ -3,40 +3,41 @@ export default function AboutUs() {
         <>
             {/* Layouting - Komponen Detail info Ecommerce (data hardcode) */}
             <p className="text-5xl pt-10">About us</p>
-            <div className="border-t mt-5 pt-5 w-full">
-                <div className="flex">
-                    <div className="flex-1 bg-blue-300">
-                        <p className="tracking-wide">Hai, Cheesemate! <br />
-                            Selamat Datang di Richesee Factory <br />
-                            Richeese Factory merupakan QSR (Quick Service Restaurant) atau restoran cepat saji, di mana hampir semua menu kami disajikan dengan saus keju yang lezat (cheese sauce).
+            <div className="border-t mt-5 pt-5 w-full mb-16">
+                <p className="font-bold ms-3 text-center mb-4">Hai, Cheesemate! <br />
+                    Selamat Datang di Richesee Factory</p>
+                <div className="flex gap-1">
+                    <div className="flex-1 bg-blue-50 p-3 rounded-l-xl">
+                        <p className="tracking-wide">
+                            <b>Richeese Factory</b> merupakan QSR (Quick Service Restaurant) atau restoran cepat saji, di mana hampir semua menu kami disajikan dengan saus keju yang lezat (cheese sauce).
                             <br /><br />
                             Restoran kami didesain unik agar menjadi tempat santai yang nyaman untuk semua usia dan kalangan. Anda dapat merayakan kebersamaan dan keceriaan bersama sambil menikmati berbagai menu yang disajikan lengkap oleh kami.
                         </p>
                     </div>
-                    <div className="flex-1 bg-red-300">
-                        <p>
-                            Richeese Factory hadir pertama kali di Indonesia pada tanggal tanggal 8 Februari 2011, bertempat di Paris Van Java Mal, Kota Bandung, Jawa Barat. Seiring dengan makin berkembangnya outlet kami, kini Richeese Factory telah hadir di kota – kota besar di Indonesia dan akan bertambah terus di tahun mendatang.
+                    <div className="flex-1 bg-red-50 p-3 rounded-r-xl">
+                        <p className="tracking-wide">
+                            <b>Richeese Factory</b> hadir pertama kali di Indonesia pada tanggal tanggal 8 Februari 2011, bertempat di Paris Van Java Mal, Kota Bandung, Jawa Barat. Seiring dengan makin berkembangnya outlet kami, kini Richeese Factory telah hadir di kota – kota besar di Indonesia dan akan bertambah terus di tahun mendatang.
                             <br /> <br />
                             Merupakan komitmen kami untuk terus dapat berinovasi dalam memberikan pelayanan dan pengalaman yang memuaskan bagi pelanggan. Kinerja kami kemudian mendapatkan penghargaan.
                         </p>
                     </div>
                 </div>
-                <div className="bg-yellow-300">
-                    <p className="grid justify-center">Berikut beberapa penghargaan yang sudah kami raih:</p>
+                <div className="bg-gradient-to-r from-red-50 to-blue-50 rounded-xl mt-1">
+                    <p className="grid justify-center font-bold py-3 border-b border-white">Berikut beberapa penghargaan yang sudah kami raih</p>
                     <div className="flex gap-2 justify-around p-3 items-center">
-                        <div className="w-32">
+                        <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
                             <img src="https://www.richeesefactory.com/media/library/l/wow-2018-frame-26572c76106160.png" alt="" />
                         </div>
-                        <div className="w-32">
+                        <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
                             <img src="https://www.richeesefactory.com/media/library/l/marketing-award-26572c792888f1.png" alt="" />
                         </div>
-                        <div className="w-32">
+                        <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
                             <img src="https://www.richeesefactory.com/media/library/l/wow-brand-2021-96572c7ddb23ef.png" alt="" />
                         </div>
-                        <div className="w-32">
+                        <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
                             <img src="https://www.richeesefactory.com/media/library/l/shopee.png" alt="" />
                         </div>
-                        <div className="w-32">
+                        <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
                             <img src="https://www.richeesefactory.com/media/library/l/myca-certificate-2023-richeese-factory-page-0001.jpg" alt="" />
                         </div>
                     </div>

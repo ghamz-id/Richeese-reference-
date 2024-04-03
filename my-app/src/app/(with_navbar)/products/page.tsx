@@ -1,3 +1,5 @@
+import Card from "@/component/card_product";
+
 export default function Menus() {
     return (
         <div className="flex flex-col items-center">
@@ -17,18 +19,11 @@ export default function Menus() {
                     </p>
                 </div>
             </div>
-            <div className="w-[65%] mt-16">
-                <div>
-                    <p className="font-bold">Menus</p>
-                </div>
-                <div className="grid grid-cols-4 gap-4">
+            <div className="w-[65%] py-16">
+                <p className="font-bold py-3">Other Menus</p>
+                <div className="grid grid-cols-4 gap-6">
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(item => (
-                        <div className="card card-compact w-auto bg-base-100 shadow-xl rounded-none hover:cursor-pointer">
-                            <figure><img src="https://www.richeesefactory.com/sites/default/media/library/ds-richicken.jpg" alt="Shoes" /></figure>
-                            <div className="card-body">
-                                <p className="card-title">DS Richicken 2 Pcs</p>
-                            </div>
-                        </div>
+                        <Card />
                     ))}
                 </div>
             </div>
