@@ -1,6 +1,7 @@
 import { database } from "../config/connect_mongo"
 
-type Product = {
+export type Product = {
+    _id: string,
     name: string,
     slug: string,
     description: string,
@@ -18,6 +19,10 @@ class Model_Products {
 
     static findAll(){
         return this.db_products().find().toArray() as Product[]
+    }
+
+    static findOne(slug: string){
+        return this.db_products().findOne({ slug })
     }
 }
 

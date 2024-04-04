@@ -1,6 +1,18 @@
+'use client'
 import Card from "@/component/card_product";
+import { Product } from "@/db/models/products";
+import { useEffect, useState } from "react";
 
 export default function Menus() {
+    const [data, setData] = useState<Product[]>([])
+    useEffect(() => {
+        const fetch_product = async () => {
+            const { data } = await (await fetch("http://localhost:3000/api/products")).json()
+            setData(data)
+        }
+        fetch_product()
+    }, [])
+
     return (
         <div className="flex flex-col items-center">
             {/* HEADERS MENU */}
@@ -22,8 +34,8 @@ export default function Menus() {
             <div className="w-[65%] py-16">
                 <p className="font-bold py-3">Other Menus</p>
                 <div className="grid grid-cols-4 gap-6">
-                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(item => (
-                        <Card />
+                    {data.map((item) => (
+                        <Card item={item} />
                     ))}
                 </div>
             </div>
