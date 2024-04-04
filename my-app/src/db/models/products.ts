@@ -9,7 +9,9 @@ export type Product = {
     price: number,
     tags: string[],
     thumbnail: string,
-    image: string[]
+    image: string[],
+    createdAt: string,
+    updatedAt: string
 }
 
 class Model_Products {
@@ -18,11 +20,13 @@ class Model_Products {
     }
 
     static findAll(){
-        return this.db_products().find().toArray() as Product[]
+        let option = {}
+        // kondsi jika query ada, option di tambah regex
+        return this.db_products().find(option).toArray() as Product[]
     }
 
     static findOne(slug: string){
-        return this.db_products().findOne({ slug })
+        return this.db_products().findOne({ slug }) as Product
     }
 }
 

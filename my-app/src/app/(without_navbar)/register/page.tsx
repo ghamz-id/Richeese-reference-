@@ -1,10 +1,33 @@
-'use client'
 import Link from "next/link"
-import { useState } from "react";
-import { BsEyeSlash, BsEye } from "react-icons/bs";
 
 export default function Login() {
-    const [flag, setFlag] = useState(false)
+    async function createRegister(formData: FormData): Promise<void> {
+        'use server'
+        const registerInput = {
+            name: formData.get('name'),
+            username: formData.get('username'),
+            email: formData.get('email'),
+            password: formData.get('password'),
+        }
+
+
+        // mutate data
+        try {
+            await fetch("http://localhost:3000/api/users/register", {
+                cache: 'no-store',
+                method: "POST",
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(registerInput)
+
+            })
+        } catch (error) {
+            // PAKAI SWAL ALERT
+            console.log(error);
+
+        }
+        // revalidate cache
+    }
+
     return (
         <div id="login">
             <div className="flex h-screen items-center justify-center mx-24 gap-2">
@@ -24,32 +47,29 @@ export default function Login() {
                 <div className="flex-2 bg-white h-[70%] min-w-[25%] rounded-xl bg-opacity-15 backdrop-blur-sm border border-l-slate-400">
                     <div className="flex flex-col items-center justify-center h-full px-4">
                         <p className="font-bold text-3xl text-white">Register</p>
-                        <form className="flex flex-col gap-3 w-80 mt-6">
+                        <form className="flex flex-col gap-3 w-80 mt-6" action={createRegister}>
                             <label className="input input-bordered flex items-center gap-2 h-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
-                                <input type="text" className="grow" placeholder="Name" />
+                                <input type="text" className="grow" placeholder="Name" name="name" />
                             </label>
                             <label className="input input-bordered flex items-center gap-2 h-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
-                                <input type="text" className="grow" placeholder="Username" />
+                                <input type="text" className="grow" placeholder="Username" name="username" />
                             </label>
                             <label className="input input-bordered flex items-center gap-2 h-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70">
                                     <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
                                     <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                                 </svg>
-                                <input type="text" className="grow" placeholder="Email" />
+                                <input type="text" className="grow" placeholder="Email" name="email" />
                             </label>
                             <label className="input input-bordered flex items-center gap-2 h-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70">
                                     <path fillRule="evenodd" d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z" clipRule="evenodd" />
                                 </svg>
-                                <input type={flag ? "text" : "password"} className="grow" placeholder="password" />
-                                {flag ? (<BsEye className="hover:cursor-pointer" onClick={() => setFlag(flag ? false : true)} />) : (
-                                    <BsEyeSlash className="hover:cursor-pointer" onClick={() => setFlag(flag ? false : true)} />
-                                )}
+                                <input type="password" className="grow" placeholder="password" name="password" />
                             </label>
-                            <button className="btn btn-primary btn-sm font-bold mt-4">Sign Up</button>
+                            <button type="submit" className="btn btn-primary btn-sm font-bold mt-4">Sign Up</button>
                         </form>
                         <p className="text-white font-light mt-6">Kembali ke halaman {" "}
                             <Link href="/login" className="text-blue-600 font-bold hover:text-slate-600">

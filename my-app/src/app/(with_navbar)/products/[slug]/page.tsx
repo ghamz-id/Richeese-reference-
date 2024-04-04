@@ -1,33 +1,20 @@
 import { Product } from "@/db/models/products"
-import { Metadata, ResolvingMetadata } from 'next'
-type Props = {
-    params: { slug: string }
-    searchParams: { [key: string]: string | string[] | undefined }
-}
+import { Metadata } from 'next'
 
-export async function generateMetadata(
-    { params, searchParams }: Props,
-    parent: ResolvingMetadata
-): Promise<Metadata> {
-    // read route params
-    const slug = params.slug
-
-    // fetch data
-    const data_detail: Product = await (await fetch("http://localhost:3000/api/products/" + slug)).json()
-
-    // optionally access and extend (rather than replace) parent metadata
-    const previousImages = (await parent).openGraph?.images || []
-
+// SEO
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+    const data_detail: Product = await (await fetch("http://localhost:3000/api/products/" + params.slug, { cache: 'no-store' })).json()
     return {
         title: data_detail.name,
         openGraph: {
-            images: ['/some-specific-page-image.jpg', ...previousImages],
+            images: ['/some-specific-page-image.jpg'],
         },
     }
 }
 
-export default async function CardDetail({ params, searchParams }: Props) {
-    const data_detail: Product = await (await fetch("http://localhost:3000/api/products/" + params.slug)).json()
+// RENDERING
+export default async function CardDetail({ params }: { params: { slug: string } }) {
+    const data_detail: Product = await (await fetch("http://localhost:3000/api/products/" + params.slug, { cache: 'no-store' })).json()
 
     return (
         <div className="hero min-h-screen bg-base-200">

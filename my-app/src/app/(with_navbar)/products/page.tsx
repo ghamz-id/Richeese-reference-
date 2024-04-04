@@ -7,7 +7,7 @@ export default function Menus() {
     const [data, setData] = useState<Product[]>([])
     useEffect(() => {
         const fetch_product = async () => {
-            const { data } = await (await fetch("http://localhost:3000/api/products")).json()
+            const { data } = await (await fetch("http://localhost:3000/api/products", { cache: 'no-store' })).json()
             setData(data)
         }
         fetch_product()
