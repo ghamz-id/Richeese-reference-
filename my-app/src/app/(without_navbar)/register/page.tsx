@@ -9,9 +9,6 @@ export default function Login() {
             email: formData.get('email'),
             password: formData.get('password'),
         }
-
-
-        // mutate data
         try {
             await fetch("http://localhost:3000/api/users/register", {
                 cache: 'no-store',
@@ -21,11 +18,8 @@ export default function Login() {
 
             })
         } catch (error) {
-            // PAKAI SWAL ALERT
-            console.log(error);
-
+            console.log(error); // PAKAI SWAL KALO SUDAH ADA VALIDASINYA
         }
-        // revalidate cache
     }
 
     return (

@@ -1,18 +1,30 @@
-'use client'
+import { redirect } from "next/navigation"
 import Link from "next/link"
-import { useState } from "react";
-import { BsEyeSlash, BsEye } from "react-icons/bs";
+import { cookies } from "next/headers"
 
 export default function Login() {
-    const [flag, setFlag] = useState(false)
-    const [input, setInput] = useState("")
-    // const GetInput = (e) => {
-    //     const {name, value} = e.target
-    //     const newInput = {
+    async function submitLogin(formData: FormData) {
+        'use server'
+        const loginInput = {
+            email: formData.get('email'),
+            password: formData.get('password'),
+        }
 
-    //     }
-    // }
+        const res = await fetch("http://localhost:3000/api/users/login", {
+            cache: 'no-store',
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(loginInput)
+        })
 
+        const result = await res.json()
+        if (!res.ok) return redirect("/login?error=" + result.error)
+
+        cookies().set("Authorization", `Bearer ${result.data.access_token}`)
+        return redirect("/products")
+    }
 
     return (
         <div id="login">
@@ -33,24 +45,21 @@ export default function Login() {
                     <div className="flex flex-col items-center justify-center h-full px-4">
                         <p className="font-bold text-3xl text-white">Hello!</p>
                         <p className="text-white font-light">Terimakasih telah mengunjungi kami</p>
-                        <form className="flex flex-col gap-3 w-80 mt-8">
+                        <form className="flex flex-col gap-3 w-80 mt-8" action={submitLogin}>
                             <label className="input input-bordered flex items-center gap-2 h-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70">
                                     <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
                                     <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                                 </svg>
-                                <input type="text" name="email" onChange={() => setInput("tes")} className="grow" placeholder="Email" />
+                                <input type="text" name="email" className="grow" placeholder="Email" />
                             </label>
                             <label className="input input-bordered flex items-center gap-2 h-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70">
                                     <path fillRule="evenodd" d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z" clipRule="evenodd" />
                                 </svg>
-                                <input type={flag ? "text" : "password"} className="grow" placeholder="password" />
-                                {flag ? (<BsEye className="hover:cursor-pointer" onClick={() => setFlag(flag ? false : true)} />) : (
-                                    <BsEyeSlash className="hover:cursor-pointer" onClick={() => setFlag(flag ? false : true)} />
-                                )}
+                                <input type="password" name="password" className="grow" placeholder="password" />
                             </label>
-                            <button className="btn btn-primary btn-sm font-bold mt-4">Sign In</button>
+                            <button type="submit" className="btn btn-primary btn-sm font-bold mt-4">Sign In</button>
                         </form>
                         <p className="text-white font-light mt-6">Belum memiliki akun ? {" "}
                             <Link href="/register" className="text-blue-600 font-bold hover:text-slate-600">
