@@ -1,5 +1,10 @@
+'use client'
 import Link from "next/link"
+import { useState } from "react";
+import { BsEyeSlash, BsEye } from "react-icons/bs";
+
 export default function Login() {
+    const [flag, setFlag] = useState(false)
     return (
         <div id="login">
             <div className="flex h-screen items-center justify-center mx-24 gap-2">
@@ -31,7 +36,10 @@ export default function Login() {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70">
                                     <path fillRule="evenodd" d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z" clipRule="evenodd" />
                                 </svg>
-                                <input type="password" className="grow" placeholder="password" />
+                                <input type={flag ? "text" : "password"} className="grow" placeholder="password" />
+                                {flag ? (<BsEye className="hover:cursor-pointer" onClick={() => setFlag(flag ? false : true)} />) : (
+                                    <BsEyeSlash className="hover:cursor-pointer" onClick={() => setFlag(flag ? false : true)} />
+                                )}
                             </label>
                             <button className="btn btn-primary btn-sm font-bold mt-4">Sign In</button>
                         </form>
