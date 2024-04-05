@@ -2,10 +2,12 @@
 import Card from "@/component/card_product";
 import { BASE_URL } from "@/db/config/constant";
 import { Product } from "@/db/models/products";
+import { NextRequest } from "next/server";
 import React, { useEffect, useState } from "react";
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-export default function Menus(request: Request) {
+export default function Menus(request: NextRequest) {
+    const [page, setPage] = useState(1)
     const [product, setProduct] = useState<Product[]>([])
     const [search, setSearch] = useState<string>()
     const getInput = (e: { preventDefault: () => void; target: { value: string } }) => {
@@ -14,15 +16,22 @@ export default function Menus(request: Request) {
         setSearch(value)
     }
     let URL: string;
-    (search) ? URL = BASE_URL + `?search=${search}` : URL = BASE_URL;
+    if (search) { URL = BASE_URL + `?search=${search}` }
+    else if (page) { URL = BASE_URL + `?page=${page}` }
+    else { URL = BASE_URL }
 
     const fetch_product = async () => {
         const { data } = await (await fetch(URL, { cache: 'no-store' })).json()
-        setProduct(data)
+        if (search) {
+            setProduct(data)
+        } else {
+            const newPage = [...product, ...data[0].results]
+            setProduct(newPage)
+        }
     }
     useEffect(() => {
         fetch_product()
-    }, [search])
+    }, [search, page])
 
     return (
         <div className="flex flex-col items-center">
@@ -52,15 +61,15 @@ export default function Menus(request: Request) {
                 </div>
                 <InfiniteScroll
                     dataLength={product.length} //This is important field to render the next data
-                    next={fetch_product}
-                    hasMore={false}
+                    next={() => setPage(page + 1)}
+                    hasMore={product.length === 24 ? false : true}
                     loader={<h4>Loading...</h4>}
                     endMessage={
                         <p style={{ textAlign: 'center' }}>
                             <b>Yay! You have seen it all</b>
                         </p>
                     } >
-                    <div className="grid grid-cols-4 gap-6">
+                    <div className="grid grid-cols-4 gap-6 mb-8">
                         {product.map((item, i) => (
                             <Card item={item} key={i} />
                         ))}
