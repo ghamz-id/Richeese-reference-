@@ -5,15 +5,24 @@ import { Product } from "@/db/models/products";
 import React, { useEffect, useState } from "react";
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-export default function Menus() {
+export default function Menus(request: Request) {
     const [product, setProduct] = useState<Product[]>([])
+    const [search, setSearch] = useState<string>()
+    const getInput = (e: { preventDefault: () => void; target: { value: string } }) => {
+        e.preventDefault()
+        const { value } = e.target
+        setSearch(value)
+    }
+    let URL: string;
+    (search) ? URL = BASE_URL + `?search=${search}` : URL = BASE_URL;
+
     const fetch_product = async () => {
-        const { data } = await (await fetch(BASE_URL, { cache: 'no-store' })).json()
-        setProduct((prev) => [...prev, ...data.slice(0, 8)])
+        const { data } = await (await fetch(URL, { cache: 'no-store' })).json()
+        setProduct(data)
     }
     useEffect(() => {
         fetch_product()
-    }, [])
+    }, [search])
 
     return (
         <div className="flex flex-col items-center">
@@ -37,14 +46,14 @@ export default function Menus() {
                 <div className="flex">
                     <p className="font-bold py-3 flex-1">Other Menus</p>
                     <label className="input input-bordered flex items-center gap-2 ms-4 h-10">
-                        <input type="text" className="grow text-sm" placeholder="Search" name="q" />
+                        <input type="text" className="grow text-sm" placeholder="Search" name="search" onChange={getInput} />
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
                     </label>
                 </div>
                 <InfiniteScroll
                     dataLength={product.length} //This is important field to render the next data
                     next={fetch_product}
-                    hasMore={true}
+                    hasMore={false}
                     loader={<h4>Loading...</h4>}
                     endMessage={
                         <p style={{ textAlign: 'center' }}>

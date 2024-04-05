@@ -20,8 +20,16 @@ class Model_Products {
         return database.collection("Products")
     }
 
-    static async findAll(){
-        return await this.db_products().find().toArray() as Product[]
+    static async findAll(search : string){
+        let option = [{
+            $match:
+              {
+                name: {$regex: search},
+              },
+        }]
+        if (!search) option = []
+        const cursor = this.db_products().aggregate(option)
+        return await cursor.toArray() as Product[]
     }
 
     static async findOne(slug: string){
