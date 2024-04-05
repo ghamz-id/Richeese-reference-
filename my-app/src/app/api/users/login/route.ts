@@ -16,6 +16,7 @@ export async function POST(request: Request){
 
         const access_token = signToken({_id: user._id, email: user.email})
         cookies().set("Authorization", `Bearer ${access_token}`)
+        
         return NextResponse.json({
             data: {access_token}
         })
@@ -25,10 +26,10 @@ export async function POST(request: Request){
             return NextResponse.json({
                 error: errMsg,
             }, { status: 400})
-        } else {
-            return NextResponse.json({
-                error: "Internal server error"
-            }, { status: 500 })
         }
+        
+        return NextResponse.json({
+            error: "Internal server error"
+        }, { status: 500 })
     }
 }

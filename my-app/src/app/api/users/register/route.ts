@@ -1,24 +1,23 @@
 'use server'
-import { hashPassword } from "@/db/helpers/bcrypt";
 import Model_User, { User } from "@/db/models/users";
 import { NextResponse } from "next/server";
+import { ZodError } from "zod";
 
 export async function POST(request : Request){
     try {
         const body: User = await request.json()
-        const registerInput = {
-            name: body.name,
-            username: body.username,
-            email: body.email,
-            password: hashPassword(body.password)
-        } as User
-        
-        await Model_User.Register(registerInput)
-        NextResponse.json(registerInput)
+        await Model_User.register(body)
+
+        return NextResponse.json({msg: "Register success"})
     } catch (error) {
+        if (error instanceof ZodError) {
+            const errMsg = error.errors[0].path[0] + " " + error.errors[0].message
+            return NextResponse.json({
+                error: errMsg,
+            }, { status: 400})
+        }
         return NextResponse.json(
-            {error: "Internal server error"},
-            {status: 500}
+            { error: "Internal server error" }, { status: 500 }
         )
     }
 }

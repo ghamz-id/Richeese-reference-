@@ -1,21 +1,25 @@
-import { ObjectId } from "mongodb"
 import { database } from "../config/connect_mongo"
+import { hashPassword } from "../helpers/bcrypt";
+import {z} from "zod";
 
-export type User = {
-    _id: ObjectId;
-    name: string;
-    username: string;
-    email: string;
-    password: string;
-}
+// validasi
+const userSchema = z.object({
+    name: z.string().min(1),
+    username: z.string().min(1),
+    email: z.string().min(1).email(),
+    password: z.string().min(5),
+});
+
+export type User = z.infer<typeof userSchema>
 
 class Model_User {
     static db_users(){
         return database.collection("Users")
     }
 
-    static async Register(payload : User){
-        return await this.db_users().insertOne(payload)
+    static async register(payload : User){
+        const isValid = userSchema.parse(payload)
+        return await this.db_users().insertOne({...isValid, password: hashPassword(isValid.password)})
     }
 
     // validasi

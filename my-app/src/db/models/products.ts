@@ -1,7 +1,8 @@
+import { ObjectId } from "mongodb"
 import { database } from "../config/connect_mongo"
 
 export type Product = {
-    _id: string,
+    _id: ObjectId,
     name: string,
     slug: string,
     description: string,
@@ -20,9 +21,7 @@ class Model_Products {
     }
 
     static findAll(){
-        let option = {}
-        // kondsi jika query ada, option di tambah regex
-        return this.db_products().find(option).toArray() as Product[]
+        return this.db_products().find().toArray() as Product[]
     }
 
     static findOne(slug: string){
