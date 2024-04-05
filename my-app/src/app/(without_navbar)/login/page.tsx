@@ -10,20 +10,24 @@ export default function Login() {
             password: formData.get('password'),
         }
 
-        const res = await fetch("http://localhost:3000/api/users/login", {
-            cache: 'no-store',
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(loginInput)
-        })
+        try {
+            const res = await fetch("http://localhost:3000/api/users/login", {
+                cache: 'no-store',
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(loginInput)
+            })
 
-        const result = await res.json()
-        if (!res.ok) return redirect("/login?error=" + result.error)
+            const result = await res.json()
+            if (!res.ok) throw result.error
 
-        cookies().set("Authorization", `Bearer ${result.data.access_token}`)
-        return redirect("/products")
+            cookies().set("Authorization", `Bearer ${result.data.access_token}`)
+            return redirect("/products")
+        } catch (error) {
+            redirect("/login?error=" + error)
+        }
     }
 
     return (

@@ -1,8 +1,13 @@
 import AboutUs from "@/component/about";
 import Card_Fav_Menus from "@/component/card_fav_menu";
 import Carousel from "@/component/carousel";
+import { BASE_URL } from "@/db/config/constant";
+import { Product } from "@/db/models/products";
+import Link from "next/link";
 
-export default function Home() {
+export default async function Home() {
+  const data: Product[] = await (await fetch(BASE_URL + "favorite", { cache: 'no-store' })).json()
+
   return (
     <>
       <Carousel />
@@ -10,11 +15,11 @@ export default function Home() {
         {/* Layouting - Komponen Featured Product (5-10 product) + “see-all” */}
         <p className="text-5xl pt-10">Menu Paling Laris</p>
         <div className="grid grid-cols-2 gap-8 border-t mt-5 pt-5">
-          {[1, 2, 3, 4].map(item => (
-            <Card_Fav_Menus />
+          {data.map((item, i) => (
+            <Card_Fav_Menus item={item} key={i} />
           ))}
         </div>
-        <p className="text-end w-full py-5 btn btn-outline my-10">Menu lainya</p>
+        <Link href={"/products"} className="text-end w-full py-5 btn btn-outline my-10">Menu lainya</Link>
 
         {/* Layouting - Komponen Detail info Ecommerce (data hardcode) */}
         <AboutUs />

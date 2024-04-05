@@ -20,12 +20,23 @@ class Model_Products {
         return database.collection("Products")
     }
 
-    static findAll(){
-        return this.db_products().find().toArray() as Product[]
+    static async findAll(){
+        return await this.db_products().find().toArray() as Product[]
     }
 
-    static findOne(slug: string){
-        return this.db_products().findOne({ slug }) as Product
+    static async findOne(slug: string){
+        return await this.db_products().findOne({ slug }) as Product
+    }
+
+    // for home
+    static async findFavorite(){
+        const agg = [
+            {
+              $limit: 4,
+            },
+        ]
+        const cursor = this.db_products().aggregate(agg);
+        return await cursor.toArray() as Product[]
     }
 }
 

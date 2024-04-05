@@ -18,7 +18,7 @@ export default function Login() {
 
             })
         } catch (error) {
-            console.log(error); // PAKAI SWAL KALO SUDAH ADA VALIDASINYA
+            console.log(error)
         }
     }
 
