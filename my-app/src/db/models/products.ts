@@ -88,6 +88,11 @@ class Model_Products {
         return await this.db_products().findOne({ slug }) as Product
     }
 
+    // for wishlist
+    static async findById(productId: string){
+        return await this.db_products().findOne({ _id: new ObjectId(productId) }) as Product
+    }
+
     // for home
     static async findFavorite(){
         const agg = [

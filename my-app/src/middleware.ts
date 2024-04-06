@@ -1,11 +1,11 @@
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
-import { joseReadPayload } from "../helpers/jwt";
+import { joseReadPayload } from "./db/helpers/jwt";
 
 export async function middleware(request: NextRequest){
-    if (request.nextUrl.pathname.startsWith("/api/wishlist")) {
+    if (request.nextUrl.pathname.startsWith("/api/wishlists")) {
         const auth = cookies().get("Authorization")?.value
-
+        
         if (!auth) return NextResponse.json({error: "Invalid token"}, {status: 401})
 
         const [type, token] = auth?.split(" ")
@@ -32,5 +32,5 @@ export async function middleware(request: NextRequest){
 }
 
 export const config = {
-    matcher : ["/api/wishlist", "/wishlist"]
+    matcher : ["/api/wishlists/:path*", "/wishlists"]
 }
