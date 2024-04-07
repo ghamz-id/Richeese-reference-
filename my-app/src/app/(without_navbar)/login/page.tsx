@@ -8,10 +8,10 @@ export default function Login() {
                 <div className="flex-1 bg-white h-[70%] rounded-xl bg-opacity-75 p-3 border border-l-slate-400">
                     <div className="flex flex-row h-full">
                         <div className="flex h-full w-[250%]">
-                            <img src="https://www.richeesefactory.com/media/library/l/13.jpg" className="rounded-lg me-4" />
+                            <img src="https://richeesefactory.com/media/thumb/banner/2024/4/4/4n9cebd9wz6s26qphsfbsw_size_1700x850_webp.webp" className="rounded-lg me-4" />
                         </div>
                         <div className="flex flex-col h-full p-3 w-[70%]">
-                            <p><b className="text-4xl">Black Lunch</b>, <i className="text-slate-600 text-sm">Pengenalan Menu Baru Serba Hitam Dari Richeese Factory</i></p>
+                            <p><b className="text-4xl">Burger deals</b>, <i className="text-slate-600 text-sm">Nikmati berbagai macam menu burger Dari Richeese Factory</i></p>
                             <img src="Curly-Arrow-PNG.png" alt="arrow" className="bg-cover my-3 px-4" />
                             <p className="font-light italic text-sm h-full text-end">Login for more</p>
                         </div>

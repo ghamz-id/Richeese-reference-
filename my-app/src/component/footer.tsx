@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer className="footer p-10 bg-neutral text-neutral-content">
             <aside>
-                <img src="https://www.richeesefactory.com/sites/default/template/default/img/logo.jpg" alt=""
+                <img src="https://richeesefactory.com/static/img/RicheeseLogo.webp" alt=""
                     className="h-24 w-24"
                 />
                 <p>Richeese Factory.<br />© 2024 PT. Richeese Kuliner Indonesia</p>

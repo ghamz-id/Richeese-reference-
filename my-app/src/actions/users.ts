@@ -17,7 +17,7 @@ export async function submitLogin(formData: FormData) {
     }
 
     try {
-        const res = await fetch(process.env.BASE_URL + "/api/users/login", {
+        const res = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/users/login", {
             cache: 'no-store',
             method: "POST",
             headers: {

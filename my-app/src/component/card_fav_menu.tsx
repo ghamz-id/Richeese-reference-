@@ -4,6 +4,7 @@ export default function Card_Fav_Menus({ item }: { item: Product }) {
     return (
         <>
             <div className="card lg:card-side bg-base-100 shadow-xl rounded-box hover:cursor-pointer
+                border border-slate-300
                 transition ease-in-out duration-300 hover:scale-105
             ">
                 <figure className="flex-1"><img src={item.thumbnail} alt="Album" className="bg-cover" /></figure>

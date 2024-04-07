@@ -6,7 +6,7 @@ import { Product } from "@/db/models/products";
 import Link from "next/link";
 
 export default async function Home() {
-  const data: Product[] = await (await fetch(process.env.BASE_URL + "/api/products/favorite", { cache: 'no-store' })).json()
+  const data: Product[] = await (await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/products/favorite", { cache: 'no-store' })).json()
 
   return (
     <>

@@ -26,19 +26,19 @@ export default function AboutUs() {
                     <p className="grid justify-center font-bold py-3 border-b border-white">Berikut beberapa penghargaan yang sudah kami raih</p>
                     <div className="flex gap-2 justify-around p-3 items-center">
                         <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
-                            <img src="https://www.richeesefactory.com/media/library/l/wow-2018-frame-26572c76106160.png" alt="" />
+                            <img src="/medali-1.jpg" alt="" />
                         </div>
                         <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
-                            <img src="https://www.richeesefactory.com/media/library/l/marketing-award-26572c792888f1.png" alt="" />
+                            <img src="/medali-2.jpg" alt="" />
                         </div>
                         <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
-                            <img src="https://www.richeesefactory.com/media/library/l/wow-brand-2021-96572c7ddb23ef.png" alt="" />
+                            <img src="/medali-3.jpg" alt="" />
                         </div>
                         <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
-                            <img src="https://www.richeesefactory.com/media/library/l/shopee.png" alt="" />
+                            <img src="/medali-4.jpg" alt="" />
                         </div>
                         <div className="w-32 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition ease-in-out duration-300 hover:scale-110">
-                            <img src="https://www.richeesefactory.com/media/library/l/myca-certificate-2023-richeese-factory-page-0001.jpg" alt="" />
+                            <img src="/medali-5.jpg" alt="" />
                         </div>
                     </div>
                 </div>

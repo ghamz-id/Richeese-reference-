@@ -11,7 +11,7 @@ export default function Login() {
             password: formData.get('password'),
         }
         try {
-            let res = await fetch(process.env.BASE_URL + "/api/users/register", {
+            let res = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/users/register", {
                 cache: 'no-store',
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },

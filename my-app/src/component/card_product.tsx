@@ -8,7 +8,9 @@ export default function Card({ item }: { item: Product }) {
         <>
 
             <div className="card card-compact w-auto bg-base-100 shadow-xl rounded-none
-                    transition ease-in-out duration-300 hover:scale-105
+                    border border-slate-300
+                    transition ease-in-out duration-300
+                    hover:scale-105
                     hover:cursor-pointer"
             >
                 <Link href={`/products/${item.slug}`} >

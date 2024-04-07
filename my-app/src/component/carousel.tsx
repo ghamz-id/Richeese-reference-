@@ -4,22 +4,17 @@ export default function Carousel() {
             {/* CAROUSEL */}
             <div className="carousel w-full h-screen">
                 <div className="carousel-item w-full">
-                    <img src="https://www.richeesefactory.com/sites/default/media/carousel/cr-65f7bf123e11c.jpg" alt="..."
+                    <img src="https://richeesefactory.com/media/thumb/banner/2024/4/4/wsr3wmm5w8db6rusacssww_size_1700x850_webp.webp" alt="..."
                         className="w-full"
                     />
                 </div>
                 <div className="carousel-item w-full">
-                    <img src="https://www.richeesefactory.com/sites/default/media/carousel/cr-659ce78b4f238.jpg" alt="..."
-                        className="w-full"
+                    <img src="https://richeesefactory.com/media/thumb/banner/2024/4/4/xdr3yd5zx6nlkeyrgkchur_size_1700x850_webp.webp" alt="..."
+                        className="w-full mt-10"
                     />
                 </div>
                 <div className="carousel-item w-full">
-                    <img src="https://www.richeesefactory.com/sites/default/media/carousel/cr-65f7c2bc95a30.jpg" alt="..."
-                        className="w-full"
-                    />
-                </div>
-                <div className="carousel-item w-full">
-                    <img src="https://www.richeesefactory.com/sites/default/media/carousel/cr-65f7c61a10cd4.jpg" alt="..."
+                    <img src="https://richeesefactory.com/media/thumb/banner/2024/4/4/vg9hjoguonrpzuatxytpoh_size_1700x850_webp.webp" alt="..."
                         className="w-full"
                     />
                 </div>

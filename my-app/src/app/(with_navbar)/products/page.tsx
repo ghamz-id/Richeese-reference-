@@ -15,9 +15,9 @@ export default function Menus() {
     }
 
     let URL: string;
-    if (search) { URL = process.env.BASE_URL + `/api/products?search=${search}` }
-    else if (page) { URL = process.env.BASE_URL + `/api/products?page=${page}` }
-    else { URL = process.env.BASE_URL + `/api/products` }
+    if (search) { URL = process.env.NEXT_PUBLIC_BASE_URL + `/api/products?search=${search}` }
+    else if (page) { URL = process.env.NEXT_PUBLIC_BASE_URL + `/api/products?page=${page}` }
+    else { URL = process.env.NEXT_PUBLIC_BASE_URL + `/api/products` }
 
     useEffect(() => {
         const fetch_product = async () => {
@@ -36,7 +36,7 @@ export default function Menus() {
     return (
         <div className="flex flex-col items-center">
             {/* HEADERS MENU */}
-            <div className="flex items-center justify-center h-[50%] w-full mt-16 border-b border-red-400 bg-[url('https://www.richeesefactory.com/sites/default/template/default/img/header-bg-menu.png')]">
+            <div className="flex items-center justify-center h-[50%] w-full mt-16 border-b border-red-400 bg-[url('https://cdn.pixabay.com/photo/2015/08/19/05/24/banner-895572_1280.jpg')] bg-cover">
                 <div className="h-full">
                     <img src="https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/qyxaya39rm6zgfpmxd8vrk_size_759_webp.webp" alt="..."
                         className="h-[24rem] bg-cover"

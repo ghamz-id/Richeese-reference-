@@ -1,433 +1,481 @@
-[
-    {
-        "name": "DS Flying Chicken 2 Pcs",
-        "slug": "ds-flying-chicken-2-pcs",
-        "description": "2 potong ayam drum stick disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "excerpt": "2 potong ayam drum stick disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "price": 56000,
-        "tags": [
-            "ayam",
-            "drum stick",
-            "bubuk volcano",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/drum-stick-flying-chicken-2pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/drum-stick-flying-chicken-2pcs.jpg"
-        ]
-    },
-    {
-        "name": "DS Richicken 2 Pcs",
-        "slug": "ds-richicken-2-pcs",
-        "description": "2 potong ayam goreng drum stick yang gurih, disajikan dengan saus keju lezat",
-        "excerpt": "2 potong ayam goreng drum stick yang gurih, disajikan dengan saus keju lezat",
-        "price": 41000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "drum stick",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/ds-richicken.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/ds-richicken.jpg"
-        ]
-    },
-    {
-        "name": "DS Richicken 2 Pcs",
-        "slug": "ds-richicken-2-pcs",
-        "description": "2 potong drum stick dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "excerpt": "2 potong drum stick dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "price": 55000,
-        "tags": [
-            "drum stick",
-            "saus BBQ",
-            "pedas",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/ds-fire-chicken.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/ds-fire-chicken.jpg"
-        ]
-    },
-    {
-        "name": "Flying Chicken 8 Pcs",
-        "slug": "flying-chicken-8-pcs",
-        "description": "8 potong ayam goreng disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "excerpt": "8 potong ayam goreng disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "price": 168000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "bubuk volcano",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/flying-chicken-8pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/flying-chicken-8pcs.jpg"
-        ]
-    },
-    {
-        "name": "Flying Chicken 5 Pcs",
-        "slug": "flying-chicken-5-pcs",
-        "description": "5 potong ayam goreng disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "excerpt": "5 potong ayam goreng disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "price": 105000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "bubuk volcano",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/flying-chicken-5pcs-96551776b42ea3.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/flying-chicken-5pcs-96551776b42ea3.jpg"
-        ]
-    },
-    {
-        "name": "Flying Chicken 3 Pcs",
-        "slug": "flying-chicken-3-pcs",
-        "description": "3 potong ayam goreng disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "excerpt": "3 potong ayam goreng disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "price": 66000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "bubuk volcano",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/flying-chicken-3pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/flying-chicken-3pcs.jpg"
-        ]
-    },
-    {
-        "name": "Flying Chicken 1 Pc",
-        "slug": "flying-chicken-1-pc",
-        "description": "1 potong ayam goreng disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "excerpt": "1 potong ayam goreng disajikan dengan taburan bubuk volcano dan saus keju yang lezat",
-        "price": 25000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "bubuk volcano",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/flying-chicken-1pc.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/flying-chicken-1pc.jpg"
-        ]
-    },
-    {
-        "name": "Richicken 8 Pcs",
-        "slug": "richicken-8-pcs",
-        "description": "8 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
-        "excerpt": "8 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
-        "price": 151000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/richicken-8pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/richicken-8pcs.jpg"
-        ]
-    },
-    {
-        "name": "Richicken 5 Pcs",
-        "slug": "richicken-5-pcs",
-        "description": "5 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
-        "excerpt": "5 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
-        "price": 96000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/richicken-5pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/richicken-5pcs.jpg"
-        ]
-    },
-    {
-        "name": "Richicken 3 Pcs",
-        "slug": "richicken-3-pcs",
-        "description": "3 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
-        "excerpt": "3 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
-        "price": 60000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/richicken-3pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/richicken-3pcs.jpg"
-        ]
-    },
-    {
-        "name": "Richicken 1 Pc",
-        "slug": "richicken-1-pc",
-        "description": "1 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
-        "excerpt": "1 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
-        "price": 23000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/richicken-1pc.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/richicken-1pc.jpg"
-        ]
-    },
-    {
-        "name": "Fire Chicken 8 Pcs",
-        "slug": "fire-chicken-8-pcs",
-        "description": "8 potong ayam goreng dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "excerpt": "8 potong ayam goreng dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "price": 223000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus BBQ",
-            "pedas",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/fire-chicken-8pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/fire-chicken-8pcs.jpg"
-        ]
-    },
-    {
-        "name": "Fire Chicken 5 Pcs",
-        "slug": "fire-chicken-5-pcs",
-        "description": "5 potong ayam goreng dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "excerpt": "5 potong ayam goreng dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "price": 145000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus BBQ",
-            "pedas",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/fire-chicken-5pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/fire-chicken-5pcs.jpg"
-        ]
-    },
-    {
-        "name": "Fire Chicken 3 Pcs",
-        "slug": "fire-chicken-3-pcs",
-        "description": "3 potong ayam goreng dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "excerpt": "3 potong ayam goreng dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "price": 89000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus BBQ",
-            "pedas",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/fire-chicken-3pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/fire-chicken-3pcs.jpg"
-        ]
-    },
-    {
-        "name": "Fire Chicken 1 Pcs",
-        "slug": "fire-chicken-1-pcs",
-        "description": "1 potong ayam goreng dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "excerpt": "1 potong ayam goreng dibalur saus BBQ dengan pilihan pedas level 0 s.d 5 yang disajikan dengan saus keju lezat",
-        "price": 33000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus BBQ",
-            "pedas",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/fire-chicken-1pc.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/fire-chicken-1pc.jpg"
-        ]
-    },
-    {
-        "name": "Fire Wings 3 Pcs",
-        "slug": "fire-wings-3-pcs",
-        "description": "3 potong sayap ayam goreng yang dibalur saus BBQ dan disajikan dengan saus keju yang lezat.",
-        "excerpt": "3 potong sayap ayam goreng yang dibalur saus BBQ dan disajikan dengan saus keju yang lezat.",
-        "price": 34000,
-        "tags": [
-            "sayap ayam",
-            "goreng",
-            "saus BBQ",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/fire-wings-3pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/fire-wings-3pcs.jpg"
-        ]
-    },
-    {
-        "name": "Nasi",
-        "slug": "nasi",
-        "description": "Nasi hangat dari Richeese Factory",
-        "excerpt": "Nasi hangat dari Richeese Factory",
-        "price": 7000,
-        "tags": [
-            "nasi"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/rice.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/rice.jpg"
-        ]
-    },
-    {
-        "name": "Fire Chicken Wings 6pcs",
-        "slug": "fire-chicken-wings-6pcs",
-        "description": "6 potong sayap ayam goreng yang dibalur saus BBQ dan disajikan dengan saus keju yang lezat.",
-        "excerpt": "6 potong sayap ayam goreng yang dibalur saus BBQ dan disajikan dengan saus keju yang lezat.",
-        "price": 185000,
-        "tags": [
-            "sayap ayam",
-            "goreng",
-            "saus BBQ",
-            "saus keju"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/fire-wings-6pcs.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/fire-wings-6pcs.jpg"
-        ]
-    },
-    {
-        "name": "BBQ Sauce",
-        "slug": "bbq-sauce",
-        "description": "Saus BBQ khas Richeese Factory dengan pilihan level 0 s.d level 5",
-        "excerpt": "Saus BBQ khas Richeese Factory dengan pilihan level 0 s.d level 5",
-        "price": 11000,
-        "tags": [
-            "saus BBQ"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/bbq-sauce.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/bbq-sauce.jpg"
-        ]
-    },
-    {
-        "name": "Combo 1 Flying Chicken",
-        "slug": "combo-1-flying-chicken",
-        "description": "1 ayam goreng yang gurih khas Richeese Factory yang ditaburi bumbu pedas, disajikan dengan cheese sauce yang lezat. 1 nasi + Fire Flying Chicken + Cheese Sauce + Pink Lava",
-        "excerpt": "1 ayam goreng yang gurih khas Richeese Factory yang ditaburi bumbu pedas, disajikan dengan cheese sauce yang lezat. 1 nasi + Fire Flying Chicken + Cheese Sauce + Pink Lava",
-        "price": 45000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "bumbu pedas",
-            "saus keju",
-            "nasi",
-            "Pink Lava"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/combo-1-flying-chicken-personal.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/combo-1-flying-chicken-personal.jpg"
-        ]
-    },
-    {
-        "name": "Combo 2 Flying Chicken",
-        "slug": "combo-2-flying-chicken",
-        "description": "2 ayam goreng yang gurih khas Richeese Factory yang ditaburi bumbu pedas, disajikan dengan cheese sauce yang lezat. 1 nasi + Fire Flying Chicken + Cheese Sauce + Pink Lava",
-        "excerpt": "2 ayam goreng yang gurih khas Richeese Factory yang ditaburi bumbu pedas, disajikan dengan cheese sauce yang lezat. 1 nasi + Fire Flying Chicken + Cheese Sauce + Pink Lava",
-        "price": 56000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "bumbu pedas",
-            "saus keju",
-            "nasi",
-            "Pink Lava"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/combo-2-flying-chicken-personal.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/combo-2-flying-chicken-personal.jpg"
-        ]
-    },
-    {
-        "name": "Combo 1 Richicken",
-        "slug": "combo-1-richicken",
-        "description": "1 ayam goreng yang gurih ala Richeese Factory ditambah 1 nasi, disajikan dengan cheese sauce yang lezat dan 1 Pink Lava/ Fruitarian ukuran Medium. (1 nasi + 1 Richicken + Cheese Sauce + Minuman)",
-        "excerpt": "1 ayam goreng yang gurih ala Richeese Factory ditambah 1 nasi, disajikan dengan cheese sauce yang lezat dan 1 Pink Lava/ Fruitarian ukuran Medium. (1 nasi + 1 Richicken + Cheese Sauce + Minuman)",
-        "price": 44000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus keju",
-            "nasi",
-            "Pink Lava"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/combo-1-richicken.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/combo-1-richicken.jpg"
-        ]
-    },
-    {
-        "name": "Combo 2 Richicken",
-        "slug": "combo-2-richicken",
-        "description": "2 ayam goreng yang gurih khas Richeese Factory ditambah 1 nasi, disajikan dengan cheese sauce yang lezat dan 1 Pink Lava/ Fruitarian ukuran Medium. 1 nasi + 2 Richicken + Cheese Sauce + Minuman",
-        "excerpt": "2 ayam goreng yang gurih khas Richeese Factory ditambah 1 nasi, disajikan dengan cheese sauce yang lezat dan 1 Pink Lava/ Fruitarian ukuran Medium. 1 nasi + 2 Richicken + Cheese Sauce + Minuman",
-        "price": 55000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus keju",
-            "nasi",
-            "Pink Lava"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/combo-2-richicken.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/combo-2-richicken.jpg"
-        ]
-    },
-    {
-        "name": "Combo 1 Fire Chicken",
-        "slug": "combo-1-fire-chicken",
-        "description": "1 ayam goreng yang gurih dibalur saus BBQ dengan pilihan pedas level 0 s.d 5, disajikan dengan cheese sauce yang lezat dan 1 Pink Lava/ Fruitarian ukuran Medium. 1 nasi + 1 Fire Chicken + Cheese Sauce + Minuman",
-        "excerpt": "1 ayam goreng yang gurih dibalur saus BBQ dengan pilihan pedas level 0 s.d 5, disajikan dengan cheese sauce yang lezat dan 1 Pink Lava/ Fruitarian ukuran Medium. 1 nasi + 1 Fire Chicken + Cheese Sauce + Minuman",
-        "price": 47000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus BBQ",
-            "pedas",
-            "saus keju",
-            "nasi",
-            "Pink Lava"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/combo-1-fire-chicken.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/combo-1-fire-chicken.jpg"
-        ]
-    },
-    {
-        "name": "Combo 2 Fire Chicken",
-        "slug": "combo-2-fire-chicken",
-        "description": "2 ayam goreng yang gurih dibalur saus BBQ dengan pilihan pedas level 0 s.d 5, disajikan dengan cheese sauce yang lezat dan 1 Pink Lava/ Fruitarian ukuran Medium. 1 nasi + 2 Fire Chicken + Cheese Sauce + Minuman",
-        "excerpt": "2 ayam goreng yang gurih dibalur saus BBQ dengan pilihan pedas level 0 s.d 5, disajikan dengan cheese sauce yang lezat dan 1 Pink Lava/ Fruitarian ukuran Medium. 1 nasi + 2 Fire Chicken + Cheese Sauce + Minuman",
-        "price": 62000,
-        "tags": [
-            "ayam",
-            "goreng",
-            "saus BBQ",
-            "pedas",
-            "saus keju",
-            "nasi",
-            "Pink Lava"
-        ],
-        "thumbnail": "https://www.richeesefactory.com/sites/default/media/library/combo-2-fire-chicken.jpg",
-        "image": [
-            "https://www.richeesefactory.com/sites/default/media/library/combo-2-fire-chicken.jpg"
-        ]
-    }
-]
+[{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea48f"
+  },
+  "name": "Laksa Friend Fries",
+  "slug": "laksa-friend-fries",
+  "description": "Kentang goreng gurih dengan lumuran Saus Laksa yang menghadirkan rasa asam, gurih, dan pedas. Dihidangkan dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Kentang goreng gurih dengan lumuran Saus Laksa yang menghadirkan rasa asam, gurih, dan pedas.",
+  "price": 25455,
+  "tags": [
+    "Kentang Goreng",
+    "Saus Laksa",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/4/ysaonuhjyxphvg8n9jynqc_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/4/ysaonuhjyxphvg8n9jynqc_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea490"
+  },
+  "name": "Laksa Chicken",
+  "slug": "laksa-chicken",
+  "description": "Ayam goreng dengan lumuran Saus Laksa yang menghadirkan rasa asam, gurih, dan pedas. Dihidangkan juga dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Ayam goreng dengan lumuran Saus Laksa yang menghadirkan rasa asam, gurih, dan pedas.",
+  "price": 48182,
+  "tags": [
+    "Ayam Goreng",
+    "Saus Laksa",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/4/wmzexgqq3mw3njsm6ge6kv_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/4/wmzexgqq3mw3njsm6ge6kv_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea491"
+  },
+  "name": "Red Velvet Ice Cream",
+  "slug": "red-velvet-ice-cream",
+  "description": "Ice Cream dengan tekstur yang lembut rasa vanilla yang disiram dengan topping Red Velvet Sauce di atasnya",
+  "excerpt": "Ice Cream dengan tekstur yang lembut rasa vanilla yang disiram dengan topping Red Velvet Sauce di atasnya",
+  "price": 15000,
+  "tags": [
+    "Ice Cream",
+    "Red Velvet Sauce"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/qz5f8apky7wrzkak3nmwxz_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/qz5f8apky7wrzkak3nmwxz_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea492"
+  },
+  "name": "Fire Wing",
+  "slug": "fire-wing",
+  "description": "Ayam goreng potongan sayap yang dibalut saus BBQ dengan pilihan level kepedasan 0-5 dihidangkan juga dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Ayam goreng potongan sayap yang dibalut saus BBQ dengan pilihan level kepedasan 0-5",
+  "price": 30909,
+  "tags": [
+    "Ayam Goreng",
+    "Saus BBQ",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/l727kssakxgwttkiphqjeh_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/l727kssakxgwttkiphqjeh_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea493"
+  },
+  "name": "Fire Chicken Whole",
+  "slug": "fire-chicken-whole",
+  "description": "Ayam goreng ukuran satu ekor yang dibalut dengan saus BBQ pilihan level kepedasan 0-5 dihidangkan juga dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Ayam goreng ukuran satu ekor yang dibalut dengan saus BBQ pilihan level kepedasan 0-5",
+  "price": 138182,
+  "tags": [
+    "Ayam Goreng",
+    "Saus BBQ",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/fpzcsjov7ryj3hj8qbdsxh_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/fpzcsjov7ryj3hj8qbdsxh_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea494"
+  },
+  "name": "Fire Chicken",
+  "slug": "fire-chicken",
+  "description": "Ayam goreng potongan personal yang dibalut saus BBQ dengan pilihan level kepedasan 0-5 dihidangkan juga dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Ayam goreng potongan personal yang dibalut saus BBQ dengan pilihan level kepedasan 0-5",
+  "price": 30000,
+  "tags": [
+    "Ayam Goreng",
+    "Saus BBQ",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/nudesz6jbmdbdsao2myn4a_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/nudesz6jbmdbdsao2myn4a_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea495"
+  },
+  "name": "Richicken",
+  "slug": "richicken",
+  "description": "Ayam goreng potongan personal yang memiliki rasa gurih khas bumbu Richeese Factory",
+  "excerpt": "Ayam goreng potongan personal yang memiliki rasa gurih khas bumbu Richeese Factory",
+  "price": 25000,
+  "tags": [
+    "Ayam Goreng",
+    "Rasa Gurih",
+    "Bumbu Richeese Factory"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/bpzk4bjrrejfctttwfohqp_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/bpzk4bjrrejfctttwfohqp_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea496"
+  },
+  "name": "Flying Chicken Whole",
+  "slug": "flying-chicken-whole",
+  "description": "8 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
+  "excerpt": "8 potong ayam goreng yang gurih dan lezat, disajikan dengan saus keju",
+  "price": 120000,
+  "tags": [
+    "Ayam Goreng",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/x7fzdbgak8tc3utwnue9jn_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/x7fzdbgak8tc3utwnue9jn_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea497"
+  },
+  "name": "Flying Chicken Personal",
+  "slug": "flying-chicken-personal",
+  "description": "Ayam goreng potongan personal dengan taburan Volcano Powder yang pedas dihidangkan dengan Saus Keju khas Richeese Factory, terdapat juga pilihan Non-Spicy.",
+  "excerpt": "Ayam goreng potongan personal dengan taburan Volcano Powder yang pedas dihidangkan dengan Saus Keju khas Richeese Factory, terdapat juga pilihan Non-Spicy.",
+  "price": 40000,
+  "tags": [
+    "Ayam Goreng",
+    "Volcano Powder",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/qyxaya39rm6zgfpmxd8vrk_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/qyxaya39rm6zgfpmxd8vrk_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea498"
+  },
+  "name": "Rich Burger Chicken",
+  "slug": "rich-burger-chicken",
+  "description": "Burger Premium dengan bun yang lembut berisi Potongan daging ayam goreng yang juicy dan renyah dengan tambahan slice keju, dan disajikan dengan Saus Keju khas Richeese Factory.",
+  "excerpt": "Burger Premium dengan bun yang lembut berisi Potongan daging ayam goreng yang juicy dan renyah dengan tambahan slice keju",
+  "price": 39091,
+  "tags": [
+    "Burger",
+    "Ayam Goreng",
+    "Slice Keju",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/akxhh7nuleh45wmtcwhcpo_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/akxhh7nuleh45wmtcwhcpo_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea499"
+  },
+  "name": "Fire Burger Lite",
+  "slug": "fire-burger-lite",
+  "description": "Burger dengan Bun yang lembut berisi Chicken Patty yang gurih, dipadukan dengan saus BBQ yang memiliki tingkat kepedasan level 0-5 dan disajikan dengan Saus Keju khas Richeese Factory.",
+  "excerpt": "Burger dengan Bun yang lembut berisi Chicken Patty yang gurih, dipadukan dengan saus BBQ yang memiliki tingkat kepedasan level 0-5",
+  "price": 23636,
+  "tags": [
+    "Burger",
+    "Chicken Patty",
+    "Saus BBQ",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/hfwocjbhitachyprvgdaze_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/hfwocjbhitachyprvgdaze_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea49a"
+  },
+  "name": "Fire Burger Beef",
+  "slug": "fire-burger-beef",
+  "description": "Burger Premium dengan bun yang lembut berisi Beef Patty yang juicy dilengkapi slice keju, selada, tomat. Dihidangkan dengan saus BBQ yang memiliki Pilihan Level Kepedasan 0-5 dan disajikan dengan Saus Keju khas Richeese Factory.",
+  "excerpt": "Burger Premium dengan bun yang lembut berisi Beef Patty yang juicy dilengkapi slice keju, selada, tomat",
+  "price": 42727,
+  "tags": [
+    "Burger",
+    "Beef Patty",
+    "Slice Keju",
+    "Selada",
+    "Tomat",
+    "Saus BBQ",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/eq88yqcgq7ha6jrhguye2m_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/eq88yqcgq7ha6jrhguye2m_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea49b"
+  },
+  "name": "Pink Lava",
+  "slug": "pink-lava",
+  "description": "Minuman segar dengan rasa berry dan teksturnya yang creamy",
+  "excerpt": "Minuman segar dengan rasa berry dan teksturnya yang creamy",
+  "price": 36364,
+  "tags": [
+    "Minuman Segar",
+    "Berry",
+    "Creamy"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/feqzjanakqwvwyenq7ise9_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/feqzjanakqwvwyenq7ise9_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea49c"
+  },
+  "name": "Amo Spark",
+  "slug": "amo-spark",
+  "description": "Minuman Soda dengan varian rasa Cola, Lemon, Strawberry dan Pink Lava",
+  "excerpt": "Minuman Soda dengan varian rasa Cola, Lemon, Strawberry dan Pink Lava",
+  "price": 4545,
+  "tags": [
+    "Minuman Soda",
+    "Cola",
+    "Lemon",
+    "Strawberry",
+    "Pink Lava"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/rqt5cdpnarvcfgr6gdzd44_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/rqt5cdpnarvcfgr6gdzd44_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea49d"
+  },
+  "name": "Potato Pompom",
+  "slug": "potato-pompom",
+  "description": "Olahan kentang lembut yang dihidangkan dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Olahan kentang lembut yang dihidangkan dengan Saus Keju khas Richeese Factory",
+  "price": 18182,
+  "tags": [
+    "Olahan Kentang",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/ljtfjb42zf3cncfsworql2_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/ljtfjb42zf3cncfsworql2_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea49e"
+  },
+  "name": "Cheesy Cream Soup",
+  "slug": "cheesy-cream-soup",
+  "description": "Cream Soup lezat dengan rasa keju khas Richeese Factory",
+  "excerpt": "Cream Soup lezat dengan rasa keju khas Richeese Factory",
+  "price": 10909,
+  "tags": [
+    "Cream Soup",
+    "Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/bawkjcnx5xwfepwgxxr7fk_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/bawkjcnx5xwfepwgxxr7fk_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea49f"
+  },
+  "name": "Fire French Fries",
+  "slug": "fire-french-fries",
+  "description": "Kentang goreng gurih yang dilumuri Saus BBQ dengan pilihan level pedas 0-1. Dihidangkan juga dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Kentang goreng gurih yang dilumuri Saus BBQ dengan pilihan level pedas 0-1",
+  "price": 25455,
+  "tags": [
+    "Kentang Goreng",
+    "Saus BBQ",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/babkmrl62qgiapfauzvmpi_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/babkmrl62qgiapfauzvmpi_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea4a0"
+  },
+  "name": "Fire Chicken Wings 6pcs",
+  "slug": "fire-chicken-wings-6pcs",
+  "description": "Kulit ayam renyah yang dihidangkan dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Kulit ayam renyah yang dihidangkan dengan Saus Keju khas Richeese Factory",
+  "price": 14545,
+  "tags": [
+    "Kulit Ayam",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/slsp7znx5xhvfuzqvusdw8_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/slsp7znx5xhvfuzqvusdw8_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea4a1"
+  },
+  "name": "Fire Chicken Rice",
+  "slug": "fire-chicken-rice",
+  "description": "Perpaduan nasi hangat yang disajikan dengan ayam. Tersedia dengan dua pilihan level kepedasan yaitu Spicy dan Non Spicy",
+  "excerpt": "Perpaduan nasi hangat yang disajikan dengan ayam. Tersedia dengan dua pilihan level kepedasan yaitu Spicy dan Non Spicy",
+  "price": 18182,
+  "tags": [
+    "Nasi Hangat",
+    "Ayam",
+    "Spicy",
+    "Non Spicy"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/cb3xwlmu5cyctsx46svwum_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/cb3xwlmu5cyctsx46svwum_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b7a3d6575511811ea4a2"
+  },
+  "name": "Fire Burger Chicken",
+  "slug": "fire-burger-chicken",
+  "description": "Burger Premium dengan bun yang lembut berisi Potonga daging ayam goreng yang juicy dan renyah dengan tambahan slice keju. Dihidangkan dengan saus BBQ yang memiliki pilihan level kepedasan 0-5 dan disajikan dengan Saus Keju khas Richeese Factory.",
+  "excerpt": "Burger Premium dengan bun yang lembut berisi Potonga daging ayam goreng yang juicy dan renyah dengan tambahan slice keju",
+  "price": 32727,
+  "tags": [
+    "Burger",
+    "Ayam Goreng",
+    "Slice Keju",
+    "Saus BBQ",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/djkk5zfnm34wwe8wumm7x4_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/djkk5zfnm34wwe8wumm7x4_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b88fd6575511811ea4a4"
+  },
+  "name": "Rich Burger Lite",
+  "slug": "rich-burger-lite",
+  "description": "Burger dengan Bun yang lembut berisi Chicken Patty yang gurih yang dipadukan dengan Saus Rich Burger dan disajikan dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Burger dengan Bun yang lembut berisi Chicken Patty yang gurih",
+  "price": 19091,
+  "tags": [
+    "Burger",
+    "Chicken Patty",
+    "Saus Rich Burger",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/avpstexh2fbfyostc7loey_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/avpstexh2fbfyostc7loey_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b88fd6575511811ea4a5"
+  },
+  "name": "Fire Wedges",
+  "slug": "fire-wedges",
+  "description": "Potato wedges yang dibaluri saus BBQ dengan pilihan level 0-1 dan dihidangkan dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Potato wedges yang dibaluri saus BBQ dengan pilihan level 0-1",
+  "price": 30000,
+  "tags": [
+    "Potato Wedges",
+    "Saus BBQ",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/k66msxtdpw2vynqxxkup9j_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/k66msxtdpw2vynqxxkup9j_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b88fd6575511811ea4a6"
+  },
+  "name": "Perkedel",
+  "slug": "perkedel",
+  "description": "Olahan kentang dicampur dengan potongan fried chicken yang dihidangkan dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Olahan kentang dicampur dengan potongan fried chicken",
+  "price": 10.909,
+  "tags": [
+    "Olahan Kentang",
+    "Fried Chicken",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/ba3hdr4jcmkwrha99x5axt_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/ba3hdr4jcmkwrha99x5axt_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b88fd6575511811ea4a7"
+  },
+  "name": "French Fries",
+  "slug": "french-fries",
+  "description": "Kentang goreng renyah yang dihidangkan dengan Saus Keju khas Richeese Factory",
+  "excerpt": "Kentang goreng renyah",
+  "price": 20909,
+  "tags": [
+    "Kentang Goreng",
+    "Saus Keju"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/pckap5bkngc7vpgzpgzjhz_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/pckap5bkngc7vpgzpgzjhz_size_759_webp.webp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6612b88fd6575511811ea4a8"
+  },
+  "name": "Frutarian",
+  "slug": "frutarian",
+  "description": "Minuman segar perpaduan rasa teh dan rasa buah",
+  "excerpt": "Minuman segar perpaduan rasa teh dan rasa buah",
+  "price": 36364,
+  "tags": [
+    "Minuman Segar",
+    "Rasa Teh",
+    "Rasa Buah"
+  ],
+  "thumbnail": "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/e9xwcivrjtg6zkwqrtqtvf_size_759_webp.webp",
+  "image": [
+    "https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/e9xwcivrjtg6zkwqrtqtvf_size_759_webp.webp"
+  ]
+}]
