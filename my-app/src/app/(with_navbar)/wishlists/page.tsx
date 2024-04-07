@@ -8,7 +8,7 @@ export default function Menus() {
     const [wishlist, setWishlist] = useState<Wishlist[]>([])
     useEffect(() => {
         const fetchWishlist = async () => {
-            const { data } = await (await fetch(process.env.BASE_URL + "wishlists", { cache: 'no-store' })).json()
+            const { data } = await (await fetch(process.env.BASE_URL + "/api/wishlists", { cache: 'no-store' })).json()
             setWishlist(data)
         }
         fetchWishlist()

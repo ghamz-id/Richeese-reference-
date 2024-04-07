@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 
 // FITUR ADD WISHLIST
 async function btnAddWishlist(productId: string | undefined) {
-    const res = await fetch(process.env.BASE_URL + "wishlists", {
+    const res = await fetch(process.env.BASE_URL + "/api/wishlists", {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
@@ -21,7 +21,7 @@ async function btnAddWishlist(productId: string | undefined) {
 
 // FITUR DELETE WISHLIST
 async function btnDelWishlist(id: string | undefined) {
-    const res = await fetch(process.env.BASE_URL + `wishlists/${id}`, {
+    const res = await fetch(process.env.BASE_URL + `/api/wishlists/${id}`, {
         method: "DELETE",
         headers: {
             Cookie: cookies().toString()

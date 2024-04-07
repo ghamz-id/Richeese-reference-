@@ -15,9 +15,9 @@ export default function Menus() {
     }
 
     let URL: string;
-    if (search) { URL = process.env.BASE_URL + `products?search=${search}` }
-    else if (page) { URL = process.env.BASE_URL + `products?page=${page}` }
-    else { URL = process.env.BASE_URL + `products` }
+    if (search) { URL = process.env.BASE_URL + `/api/products?search=${search}` }
+    else if (page) { URL = process.env.BASE_URL + `/api/products?page=${page}` }
+    else { URL = process.env.BASE_URL + `/api/products` }
 
     useEffect(() => {
         const fetch_product = async () => {
