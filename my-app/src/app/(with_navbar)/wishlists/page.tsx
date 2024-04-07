@@ -28,8 +28,8 @@ export default function Menus() {
                         </tr>
                     </thead>
                     <tbody>
-                        {wishlist.map((item, i) => (
-                            <tr key={i}>
+                        {wishlist.map((item, idx) => (
+                            <tr key={idx}>
                                 <td>
                                     <div className="flex items-center gap-3">
                                         <div className="avatar">
@@ -45,8 +45,8 @@ export default function Menus() {
                                 <td>
                                     {item.productDetail[0].description}
                                     <br />
-                                    <span className="badge badge-ghost badge-sm mt-2">{item.productDetail[0].tags.map(el => (
-                                        <p className="px-2 border-l border-r hover:cursor-pointer">#{el}</p>
+                                    <span className="badge badge-ghost badge-sm mt-2">{item.productDetail[0].tags.map((el, idx) => (
+                                        <p className="px-2 border-l border-r hover:cursor-pointer" key={idx}>#{el}</p>
                                     ))}</span>
                                 </td>
                                 <td>{new Intl.NumberFormat("id-ID", {

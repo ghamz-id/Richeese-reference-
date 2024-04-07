@@ -1,4 +1,6 @@
+import { BASE_URL } from "@/db/config/constant"
 import Link from "next/link"
+import { redirect } from "next/navigation"
 
 export default function Login() {
     async function createRegister(formData: FormData): Promise<void> {
@@ -10,16 +12,21 @@ export default function Login() {
             password: formData.get('password'),
         }
         try {
-            await fetch("http://localhost:3000/api/users/register", {
+            let res = await fetch(BASE_URL + "users/register", {
                 cache: 'no-store',
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(registerInput)
 
             })
+
+            if (!res.ok) throw res
+
         } catch (error) {
             console.log(error)
         }
+
+        return redirect("/login")
     }
 
     return (

@@ -10,7 +10,7 @@ export default function Menus(request: NextRequest) {
     const [page, setPage] = useState(1)
     const [product, setProduct] = useState<Product[]>([])
     const [search, setSearch] = useState<string>()
-    const getInput = (e: { preventDefault: () => void; target: { value: string } }) => {
+    const getInput = (e: { preventDefault: () => void; target: { value: any; }; }) => {
         e.preventDefault()
         const { value } = e.target
         setSearch(value)

@@ -1,3 +1,4 @@
+'use server'
 import AboutUs from "@/component/about";
 import Card_Fav_Menus from "@/component/card_fav_menu";
 import Carousel from "@/component/carousel";

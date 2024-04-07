@@ -1,35 +1,7 @@
-import { redirect } from "next/navigation"
+import { submitLogin } from "@/actions/users"
 import Link from "next/link"
-import { cookies } from "next/headers"
 
 export default function Login(request: Request) {
-
-    async function submitLogin(formData: FormData) {
-        'use server'
-        const loginInput = {
-            email: formData.get('email'),
-            password: formData.get('password'),
-        }
-
-        try {
-            const res = await fetch("http://localhost:3000/api/users/login", {
-                cache: 'no-store',
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(loginInput)
-            })
-
-            const result = await res.json()
-            if (!res.ok) throw result.error
-
-            cookies().set("Authorization", `Bearer ${result.data.access_token}`)
-            return redirect("/products")
-        } catch (error) {
-            return redirect("/login?error=" + error)
-        }
-    }
 
     return (
         <div id="login">
