@@ -1,8 +1,6 @@
 'use client'
-import { btnAddWishlist } from "@/actions/wishlists";
 import { Product } from "@/db/models/products"
 import Link from "next/link";
-import { BsCart2 } from "react-icons/bs";
 import BtnWishlist from "./btnWishlist";
 
 export default function Card({ item }: { item: Product }) {

@@ -2,15 +2,15 @@
 import Card from "@/component/card_product";
 import { BASE_URL } from "@/db/config/constant";
 import { Product } from "@/db/models/products";
-import { NextRequest } from "next/server";
 import React, { useEffect, useState } from "react";
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-export default function Menus(_request: NextRequest) {
+export default function Menus() {
     const [page, setPage] = useState(1)
+    const [count, setCount] = useState<number>(0)
     const [product, setProduct] = useState<Product[]>([])
     const [search, setSearch] = useState<string>()
-    const getInput = (e: any) => {
+    const getInput = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = e.target
         setSearch(value)
     }
@@ -20,16 +20,17 @@ export default function Menus(_request: NextRequest) {
     else if (page) { URL = BASE_URL + `products?page=${page}` }
     else { URL = BASE_URL + `products` }
 
-    const fetch_product = async () => {
-        const { data } = await (await fetch(URL, { cache: 'no-store' })).json()
-        if (search) {
-            setProduct(data)
-        } else {
-            const newPage = [...product, ...data[0].results]
-            setProduct(newPage)
-        }
-    }
     useEffect(() => {
+        const fetch_product = async () => {
+            const { data } = await (await fetch(URL, { cache: 'no-store' })).json()
+            if (search) {
+                setProduct(data)
+            } else {
+                const newPage = [...product, ...data[0].results]
+                setProduct(newPage)
+                setCount(data[0].total)
+            }
+        }
         fetch_product()
     }, [search, page])
 
@@ -62,7 +63,7 @@ export default function Menus(_request: NextRequest) {
                 <InfiniteScroll
                     dataLength={product.length} //This is important field to render the next data
                     next={() => setPage(page + 1)}
-                    hasMore={product.length === 24 ? false : true}
+                    hasMore={product.length >= count ? false : true}
                     loader={<h4>Loading...</h4>}
                     endMessage={
                         <p style={{ textAlign: 'center' }}>

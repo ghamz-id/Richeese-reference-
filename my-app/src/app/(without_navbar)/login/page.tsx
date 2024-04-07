@@ -1,8 +1,7 @@
 import { submitLogin } from "@/actions/users"
 import Link from "next/link"
 
-export default function Login(request: Request) {
-
+export default function Login() {
     return (
         <div id="login">
             <div className="flex h-screen items-center justify-center mx-24 gap-2">
@@ -19,6 +18,9 @@ export default function Login(request: Request) {
                     </div>
                 </div>
                 <div className="flex-2 bg-white h-[70%] min-w-[25%] rounded-xl bg-opacity-15 backdrop-blur-sm border border-l-slate-400">
+                    <Link href={"/"}>
+                        <button className="text-white italic absolute right-0 -top-10 bg-black border border-white px-2">Back to home</button>
+                    </Link>
                     <div className="flex flex-col items-center justify-center h-full px-4">
                         <p className="font-bold text-3xl text-white">Hello!</p>
                         <p className="text-white font-light">Terimakasih telah mengunjungi kami</p>

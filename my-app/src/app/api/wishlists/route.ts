@@ -9,10 +9,10 @@ export async function POST(request: Request) {
 
         const { productId }: { productId: string } = await request.json()
         const product = await Model_Products.findById(productId)
-        if (!product) return NextResponse.json({ error: "Data not found" })
+        if (!product) throw NextResponse.json({ error: "Data not found" }, { status: 404 })
 
         const wishlist = await Model_Wishlist.findListByid(productId)
-        if (wishlist) return NextResponse.json({ error: "This product has ready" })
+        if (wishlist) throw NextResponse.json({ error: "This product has ready" }, { status: 400 })
 
         const body = {
             userId: userId,
@@ -24,7 +24,14 @@ export async function POST(request: Request) {
         await Model_Wishlist.addWishlist(body)
         return NextResponse.json({ data: body })
 
-    } catch (error) {
+    } catch (error: any) {
+        if (error.status === 400) {
+            return NextResponse.json({ error: "This product has ready" })
+        }
+        if (error.status === 404) {
+            return NextResponse.json({ error: "Data not found" })
+        }
+
         return NextResponse.json({ error: "Data not found" }, { status: 500 })
     }
 }

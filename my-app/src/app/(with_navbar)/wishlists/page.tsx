@@ -3,14 +3,15 @@ import { btnDelWishlist } from "@/actions/wishlists"
 import { BASE_URL } from "@/db/config/constant"
 import { Wishlist } from "@/db/models/wishlist"
 import { useEffect, useState } from "react"
+import Swal from "sweetalert2"
 
 export default function Menus() {
     const [wishlist, setWishlist] = useState<Wishlist[]>([])
-    const fetchWishlist = async () => {
-        const { data } = await (await fetch(BASE_URL + "wishlists")).json()
-        setWishlist(data)
-    }
     useEffect(() => {
+        const fetchWishlist = async () => {
+            const { data } = await (await fetch(BASE_URL + "wishlists", { cache: 'no-store' })).json()
+            setWishlist(data)
+        }
         fetchWishlist()
     }, [wishlist])
 
@@ -54,7 +55,16 @@ export default function Menus() {
                                     currency: "IDR",
                                 }).format(item.productDetail[0].price)}</td>
                                 <th>
-                                    <button onClick={() => btnDelWishlist(String(item._id))} className="btn btn-error btn-xs text-white">Remove</button>
+                                    <button onClick={() => {
+                                        btnDelWishlist(String(item._id))
+                                        setTimeout(() => {
+                                            Swal.fire({
+                                                title: "Success",
+                                                text: "Success remove to wishlist",
+                                                icon: "success"
+                                            })
+                                        }, 1000)
+                                    }} className="btn btn-error btn-xs text-white">Remove</button>
                                 </th>
                             </tr>
                         ))}

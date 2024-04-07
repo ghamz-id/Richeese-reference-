@@ -23,7 +23,6 @@ export default function Login() {
             if (!res.ok) throw res
 
         } catch (error) {
-            console.log(error)
         }
 
         return redirect("/login")

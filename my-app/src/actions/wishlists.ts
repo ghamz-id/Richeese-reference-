@@ -1,6 +1,5 @@
 'use server'
 import { BASE_URL } from "@/db/config/constant";
-import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -17,8 +16,7 @@ async function btnAddWishlist(productId: string | undefined) {
     })
 
     if (res.ok) {
-        revalidatePath("/wishlists");
-        redirect("/wishlists")
+        return res.statusText
     }
 }
 
@@ -33,7 +31,6 @@ async function btnDelWishlist(id: string | undefined) {
     })
 
     if (res.ok) {
-        revalidatePath("/wishlists");
         redirect("/wishlists")
     }
 }
