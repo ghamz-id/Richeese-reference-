@@ -16,9 +16,9 @@ export default function Menus(request: NextRequest) {
         setSearch(value)
     }
     let URL: string;
-    if (search) { URL = BASE_URL + `?search=${search}` }
-    else if (page) { URL = BASE_URL + `?page=${page}` }
-    else { URL = BASE_URL }
+    if (search) { URL = BASE_URL + `products?search=${search}` }
+    else if (page) { URL = BASE_URL + `products?page=${page}` }
+    else { URL = BASE_URL + `products` }
 
     const fetch_product = async () => {
         const { data } = await (await fetch(URL, { cache: 'no-store' })).json()

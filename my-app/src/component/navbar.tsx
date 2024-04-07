@@ -1,6 +1,9 @@
 import Link from "next/link"
+import Logout from "./btnLogout"
+import { cookies } from "next/headers"
 
 export default function Navbar() {
+    const isLogin = cookies().toString()
     return (
         <>
             {/* NAVBAR */}
@@ -17,13 +20,17 @@ export default function Navbar() {
                     <Link href={"/products"}>
                         <div role="button" className="w-32 p-2 rounded-lg m-1 text-center text-white hover:bg-red-600 font-bold">Menu</div>
                     </Link>
-                    <Link href={"/wishlist"}>
+                    <Link href={"/wishlists"}>
                         <div role="button" className="w-32 p-2 rounded-lg m-1 text-center text-white hover:bg-red-600 font-bold">Keranjang</div>
                     </Link>
                     <p className="text-white ms-10 me-4 font-light text-sm"><b>ID</b> | <b className="text-slate-400">EN</b></p>
-                    <Link href={"/login"} className="btn btn-sm">
-                        Sign in
-                    </Link>
+                    {!isLogin ? (
+                        <Link href={"/login"} className="btn btn-sm">
+                            Sign in
+                        </Link>
+                    ) : (
+                        <Logout />
+                    )}
                 </div>
             </div>
         </>

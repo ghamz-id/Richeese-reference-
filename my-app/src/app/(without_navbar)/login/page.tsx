@@ -2,7 +2,8 @@ import { redirect } from "next/navigation"
 import Link from "next/link"
 import { cookies } from "next/headers"
 
-export default function Login() {
+export default function Login(request: Request) {
+
     async function submitLogin(formData: FormData) {
         'use server'
         const loginInput = {
@@ -26,7 +27,7 @@ export default function Login() {
             cookies().set("Authorization", `Bearer ${result.data.access_token}`)
             return redirect("/products")
         } catch (error) {
-            redirect("/login?error=" + error)
+            return redirect("/login?error=" + error)
         }
     }
 

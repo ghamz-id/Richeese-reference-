@@ -6,7 +6,7 @@ import { Product } from "@/db/models/products";
 import Link from "next/link";
 
 export default async function Home() {
-  const data: Product[] = await (await fetch(BASE_URL + "favorite", { cache: 'no-store' })).json()
+  const data: Product[] = await (await fetch(BASE_URL + "products/favorite", { cache: 'no-store' })).json()
 
   return (
     <>
