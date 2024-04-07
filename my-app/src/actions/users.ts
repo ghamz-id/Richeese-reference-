@@ -2,7 +2,6 @@
 
 import { redirect } from "next/navigation"
 import { cookies } from "next/headers"
-import { BASE_URL } from "@/db/config/constant"
 
 // LOGOUT
 export async function logout() {
@@ -18,7 +17,7 @@ export async function submitLogin(formData: FormData) {
     }
 
     try {
-        const res = await fetch(BASE_URL + "users/login", {
+        const res = await fetch(process.env.BASE_URL + "users/login", {
             cache: 'no-store',
             method: "POST",
             headers: {

@@ -1,6 +1,5 @@
 'use client'
 import Card from "@/component/card_product";
-import { BASE_URL } from "@/db/config/constant";
 import { Product } from "@/db/models/products";
 import React, { useEffect, useState } from "react";
 import InfiniteScroll from 'react-infinite-scroll-component'
@@ -16,9 +15,9 @@ export default function Menus() {
     }
 
     let URL: string;
-    if (search) { URL = BASE_URL + `products?search=${search}` }
-    else if (page) { URL = BASE_URL + `products?page=${page}` }
-    else { URL = BASE_URL + `products` }
+    if (search) { URL = process.env.BASE_URL + `products?search=${search}` }
+    else if (page) { URL = process.env.BASE_URL + `products?page=${page}` }
+    else { URL = process.env.BASE_URL + `products` }
 
     useEffect(() => {
         const fetch_product = async () => {

@@ -2,12 +2,11 @@
 import AboutUs from "@/component/about";
 import Card_Fav_Menus from "@/component/card_fav_menu";
 import Carousel from "@/component/carousel";
-import { BASE_URL } from "@/db/config/constant";
 import { Product } from "@/db/models/products";
 import Link from "next/link";
 
 export default async function Home() {
-  const data: Product[] = await (await fetch(BASE_URL + "products/favorite", { cache: 'no-store' })).json()
+  const data: Product[] = await (await fetch(process.env.BASE_URL + "products/favorite", { cache: 'no-store' })).json()
 
   return (
     <>

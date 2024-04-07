@@ -1,4 +1,3 @@
-import { BASE_URL } from "@/db/config/constant"
 import Link from "next/link"
 import { redirect } from "next/navigation"
 
@@ -12,7 +11,7 @@ export default function Login() {
             password: formData.get('password'),
         }
         try {
-            let res = await fetch(BASE_URL + "users/register", {
+            let res = await fetch(process.env.BASE_URL + "users/register", {
                 cache: 'no-store',
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },

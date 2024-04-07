@@ -1,11 +1,10 @@
 import BtnWishlist from "@/component/btnWishlist";
-import { BASE_URL } from "@/db/config/constant"
 import { Product } from "@/db/models/products"
 import { Metadata } from 'next'
 
 // SEO
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const data_detail: Product = await (await fetch(BASE_URL + `products/${params.slug}`, { cache: 'no-store' })).json()
+    const data_detail: Product = await (await fetch(process.env.BASE_URL + `products/${params.slug}`, { cache: 'no-store' })).json()
     return {
         title: data_detail.name,
         openGraph: {
@@ -16,7 +15,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 // RENDERING
 export default async function CardDetail({ params }: { params: { slug: string } }) {
-    const data_detail: Product = await (await fetch(BASE_URL + `products/${params.slug}`, { cache: 'no-store' })).json()
+    const data_detail: Product = await (await fetch(process.env.BASE_URL + `products/${params.slug}`, { cache: 'no-store' })).json()
 
     return (
         <>

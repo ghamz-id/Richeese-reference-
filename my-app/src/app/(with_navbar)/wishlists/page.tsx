@@ -1,6 +1,5 @@
 'use client'
 import { btnDelWishlist } from "@/actions/wishlists"
-import { BASE_URL } from "@/db/config/constant"
 import { Wishlist } from "@/db/models/wishlist"
 import { useEffect, useState } from "react"
 import Swal from "sweetalert2"
@@ -9,7 +8,7 @@ export default function Menus() {
     const [wishlist, setWishlist] = useState<Wishlist[]>([])
     useEffect(() => {
         const fetchWishlist = async () => {
-            const { data } = await (await fetch(BASE_URL + "wishlists", { cache: 'no-store' })).json()
+            const { data } = await (await fetch(process.env.BASE_URL + "wishlists", { cache: 'no-store' })).json()
             setWishlist(data)
         }
         fetchWishlist()
