@@ -6,15 +6,15 @@ import { NextRequest } from "next/server";
 import React, { useEffect, useState } from "react";
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-export default function Menus(request: NextRequest) {
+export default function Menus(_request: NextRequest) {
     const [page, setPage] = useState(1)
     const [product, setProduct] = useState<Product[]>([])
     const [search, setSearch] = useState<string>()
-    const getInput = (e: { preventDefault: () => void; target: { value: any; }; }) => {
-        e.preventDefault()
+    const getInput = (e: any) => {
         const { value } = e.target
         setSearch(value)
     }
+
     let URL: string;
     if (search) { URL = BASE_URL + `products?search=${search}` }
     else if (page) { URL = BASE_URL + `products?page=${page}` }
@@ -38,7 +38,7 @@ export default function Menus(request: NextRequest) {
             {/* HEADERS MENU */}
             <div className="flex items-center justify-center h-[50%] w-full mt-16 border-b border-red-400 bg-[url('https://www.richeesefactory.com/sites/default/template/default/img/header-bg-menu.png')]">
                 <div className="h-full">
-                    <img src="https://www.richeesefactory.com/sites/default/media/category/ala-carte-6302edf7bca33.png" alt="..."
+                    <img src="https://richeesefactory.com/omni-media/thumb/product_photo/2024/4/5/qyxaya39rm6zgfpmxd8vrk_size_759_webp.webp" alt="..."
                         className="h-[24rem] bg-cover"
                     />
                 </div>

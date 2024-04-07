@@ -3,6 +3,7 @@ import { btnAddWishlist } from "@/actions/wishlists";
 import { Product } from "@/db/models/products"
 import Link from "next/link";
 import { BsCart2 } from "react-icons/bs";
+import BtnWishlist from "./btnWishlist";
 
 export default function Card({ item }: { item: Product }) {
     return (
@@ -19,12 +20,9 @@ export default function Card({ item }: { item: Product }) {
                 <div className="card-body">
                     <p className="card-title">{item.name}</p>
                 </div>
-                <button onClick={() => btnAddWishlist(String(item._id))} className="btn btn-outline btn-success btn-sm h-fit absolute left-3 top-3">
-                    <div className="flex flex-col py-1 items-center">
-                        <BsCart2 className="text-xl" />
-                        <p className="text-xs">Wishlist</p>
-                    </div>
-                </button>
+                <div className="absolute left-3 top-3">
+                    <BtnWishlist id={String(item._id)} />
+                </div>
             </div>
         </>
     )

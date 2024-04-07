@@ -1,8 +1,7 @@
+import BtnWishlist from "@/component/btnWishlist";
 import { BASE_URL } from "@/db/config/constant"
 import { Product } from "@/db/models/products"
 import { Metadata } from 'next'
-import { BsCart2 } from "react-icons/bs";
-import addWishlist from "@/component/btn_wishlist";
 
 // SEO
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
@@ -35,7 +34,7 @@ export default async function CardDetail({ params }: { params: { slug: string } 
                             style: "currency",
                             currency: "IDR",
                         }).format(data_detail.price)}</h2>
-                        <button className="btn btn-primary"><BsCart2 className="text-xl -mt-1" />Wishlist</button>
+                        <BtnWishlist id={String(data_detail._id)} />
                         <ul className="flex gap-1 mt-8 border-t">
                             <p className="text-sm font-bold p-2">Tags terkait :</p>
                             {data_detail.tags.map((el, i) => (
